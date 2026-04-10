@@ -19,7 +19,7 @@ const Residential = () => (
         <div className="absolute inset-0 bg-deep-brown/70" />
       </div>
       <div className="relative container-main text-center px-4">
-        <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-warm-white font-semibold mb-4">Welcome to Residential</h1>
+        <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-warm-white font-semibold mb-4">Welcome to Residential </h1>
         <p className="text-warm-white/80 text-lg max-w-2xl mx-auto">Lacasaa specializes in curating premium residential properties across Mumbai's most coveted neighborhoods.</p>
       </div>
     </section>

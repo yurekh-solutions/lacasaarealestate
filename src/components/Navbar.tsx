@@ -8,10 +8,10 @@ const navLinks = [
   { label: "About", path: "/about" },
   { label: "Residential", path: "/residential" },
   { label: "Commercial", path: "/commercial" },
-  { label: "New Launches", path: "/new-launches" },
-  { label: "Penthouses", path: "/luxury-penthouses" },
+  // { label: "New Launches", path: "/new-launches" },
+  // { label: "Penthouses", path: "/luxury-penthouses" },
   { label: "Services", path: "/services" },
-  { label: "Investment", path: "/investment" },
+  // { label: "Investment", path: "/investment" },
   { label: "Contact", path: "/contact" },
 ];
 
