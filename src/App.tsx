@@ -81,11 +81,11 @@ const App = () => (
         <Footer />
         
         {/* Floating Action Buttons - WhatsApp & Call */}
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
           {/* Call Button */}
           <a
             href="tel:+919821090922"
-            className="group relative w-14 h-14 bg-gradient-to-r from-accent to-primary rounded-full shadow-elegant flex items-center justify-center hover:scale-110 transition-all duration-300 animate-pulse"
+            className="group relative w-14 h-14 bg-gradient-to-r from-accent to-primary rounded-full shadow-elegant flex items-center justify-center hover:scale-110 transition-all duration-300"
             aria-label="Call Us"
           >
             <Phone size={24} className="text-warm-white" />
@@ -99,7 +99,7 @@ const App = () => (
             href="https://wa.me/919821090922?text=Hi,%20I'm%20interested%20in%20your%20properties"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full shadow-elegant flex items-center justify-center hover:scale-110 transition-all duration-300 animate-bounce"
+            className="group relative w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full shadow-elegant flex items-center justify-center hover:scale-110 transition-all duration-300"
             aria-label="WhatsApp"
           >
             <MessageCircle size={24} className="text-warm-white" />
