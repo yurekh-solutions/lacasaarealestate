@@ -149,6 +149,17 @@ const Footer = () => (
           <Link to="/terms" className="hover:text-gold-light transition-colors">Terms & Conditions</Link>
           <Link to="/faq" className="hover:text-gold-light transition-colors">FAQ</Link>
         </div>
+        <p className="text-center md:text-right">
+          Designed & Developed by{" "}
+          <a 
+            href="https://yurekh.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gold-light hover:text-gold font-semibold transition-colors"
+          >
+            YurekhSolutions
+          </a>
+        </p>
       </div>
     </div>
   </footer>
