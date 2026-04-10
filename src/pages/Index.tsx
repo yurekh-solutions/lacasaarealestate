@@ -264,7 +264,7 @@ const HomePage = () => {
       {/* RESIDENTIAL */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto">
-          <SectionHeading title="Residential Enquiry" />
+          <SectionHeading title="Our Residential Listings" />
 
           <div className="grid md:grid-cols-4 gap-6 mt-6">
             {residentialProperties.slice(0, 4).map((p) => (
@@ -277,7 +277,7 @@ const HomePage = () => {
       {/* COMMERCIAL */}
       <section className="py-16">
         <div className="container mx-auto">
-          <SectionHeading title="Commercial Enquiry" />
+          <SectionHeading title="Our Commercial Listings" />
 
           <div className="grid md:grid-cols-4 gap-6 mt-6">
             {commercialProperties.slice(0, 4).map((p) => (

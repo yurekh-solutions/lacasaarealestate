@@ -77,39 +77,54 @@ const Services = () => (
     </section>
 
     {/* Services Grid */}
-    <section className="section-padding">
+    <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
       <div className="container-main">
         <SectionHeading title="What We Offer" subtitle="End-to-end real estate services backed by years of expertise" />
-        <div className="space-y-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {services.map((s, i) => (
-            <div key={s.title} className="group glass-card-premium overflow-hidden grid lg:grid-cols-2 gap-0 hover-lift">
-              <div className="p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-1">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <s.icon size={28} className="text-accent" />
-                </div>
-                <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4 group-hover:text-accent transition-colors">{s.title}</h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">{s.desc}</p>
-                <ul className="space-y-3 mb-8">
-                  {s.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="w-2 h-2 rounded-full bg-gradient-to-r from-accent to-primary flex-shrink-0 mt-1.5" /> 
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-accent to-primary text-warm-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all text-sm w-fit group-hover:gap-3">
-                  Enquire Now <ArrowRight size={16} />
-                </Link>
-              </div>
-              <div className="relative min-h-[300px] lg:min-h-full overflow-hidden order-1 lg:order-2">
+            <div key={s.title} className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100">
+              {/* Image Section */}
+              <div className="relative overflow-hidden h-64">
                 <img 
                   src={s.image} 
                   alt={s.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   loading="lazy" 
                 />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-warm-white/20 lg:bg-gradient-to-l" />
+                {/* Icon Badge */}
+                <div className="absolute top-4 right-4 w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-xl">
+                  <s.icon size={24} className="text-warm-white" />
+                </div>
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              </div>
+              
+              {/* Content Section */}
+              <div className="p-6">
+                <h3 className="font-heading text-2xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
+                  {s.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
+                  {s.desc}
+                </p>
+                
+                {/* Features List */}
+                <ul className="space-y-2 mb-6">
+                  {s.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-xs text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-accent to-primary flex-shrink-0 mt-1.5" /> 
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                {/* CTA Button */}
+                <Link 
+                  to="/contact" 
+                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-accent to-primary text-warm-white py-3 rounded-2xl text-sm font-semibold hover:shadow-xl transition-all duration-300 group-hover:gap-3"
+                >
+                  Enquire Now <ArrowRight size={16} />
+                </Link>
               </div>
             </div>
           ))}
